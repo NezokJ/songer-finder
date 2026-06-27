@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск исполнителей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="main-container">
+        <!-- Блок поиска (изначально по центру) -->
+        <div class="search-section" id="search-section">
+            <h1 class="logo">Music<span>Search</span></h1>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Введите имя исполнителя (например, Madison Beer)...">
+                <button id="search-btn">Найти</button>
+            </div>
+            <p class="hint">В тестовом режиме доступна только Madison Beer</p>
+            <p class="hint">ct0.1v Not for publishing.</p>
+        </div>
+
+        <!-- Блок с результатами (изначально скрыт) -->
+        <div class="profile-section hidden" id="profile-section">
+            <!-- Основная инфа про артиста -->
+            <div class="artist-header">
+                <img id="artist-img" src="" alt="Исполнитель">
+                <div class="artist-info">
+                    <h2 id="artist-name">Имя Исполнителя</h2>
+                    <p class="listeners">Ежемесячные слушатели (Spotify): <span id="artist-listeners">0</span></p>
+                </div>
+            </div>
+
+            <!-- Контент: Треки и Альбомы -->
+            <div class="artist-content">
+                <div class="tracks-column">
+                    <h3>Популярные треки</h3>
+                    <ul id="tracks-list" class="data-list"></ul>
+                </div>
+                
+                <div class="albums-column">
+                    <h3>Альбомы</h3>
+                    <div id="albums-grid" class="albums-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Всплывающее окно (Модалка) -->
+    <div class="modal-overlay hidden" id="track-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            
+            <h2 id="modal-track-name">Название трека</h2>
+            <p class="modal-artist">Исполнитель: <span id="modal-track-artist">Madison Beer</span></p>
+            <p class="modal-stat">Прослушивания: <span id="modal-track-plays">0</span></p>
+            
+            <h3>Слушать на площадках:</h3>
+            <div class="platforms-links">
+                <a href="#" id="link-spotify" target="_blank" class="platform-btn spotify">Spotify</a>
+                <a href="#" id="link-apple" target="_blank" class="platform-btn apple">Apple Music</a>
+                <a href="#" id="link-youtube" target="_blank" class="platform-btn youtube">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
