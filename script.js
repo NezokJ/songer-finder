@@ -3,7 +3,7 @@ const mockDatabase = {
     "madison beer": {
         name: "Madison Beer",
         listeners: "17 068 108",
-        image: "https://i.scdn.co/image/ab6761670000ecd42ddb7e77b33ae3b2c54d4a29", 
+        image: "./images/avatar.jpg", 
         tracks: [
             { 
                 name: "Reckless", 
@@ -52,10 +52,10 @@ const mockDatabase = {
             }
         ],
         albums: [
-            { title: "As She Pleases (EP)", year: "2018", image: "https://static.wikia.nocookie.net/madisonbeer/images/8/8c/Madison_Beer_-_As_She_Pleases_%28EP_cover%29.jpg/revision/latest?cb=20230916231924" },
-            { title: "Life Support", year: "2021", image: "https://static.wikia.nocookie.net/madisonbeer/images/c/ce/Life_Support_Artwork.jpeg/revision/latest/scale-to-width-down/1000?cb=20230916231601" },
-            { title: "Silence Between Songs", year: "2023", image: "https://static.wikia.nocookie.net/madisonbeer/images/7/73/SBS_cover.jpeg/revision/latest/scale-to-width-down/1000?cb=20230916231325" },
-            { title: "Locket", year: "2026", image: "https://static.wikia.nocookie.net/madisonbeer/images/1/13/Locket.jpg/revision/latest/scale-to-width-down/1000?cb=20251023141444" }
+            { title: "As She Pleases (EP)", year: "2018", image: "./images/As_She_Pleases.jpg" },
+            { title: "Life Support", year: "2021", image: "./images/Life_Support_Artwork.jpg" },
+            { title: "Silence Between Songs", year: "2023", image: "./images/SBS_cover.jpg" },
+            { title: "Locket", year: "2026", image: "./images/locket.jpg" }
         ]
     }
 };
